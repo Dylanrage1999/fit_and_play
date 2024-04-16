@@ -255,4 +255,27 @@
     });
   });
 
+// "Get Started" button functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all elements with the class "buy-btn"
+  var buttons = document.querySelectorAll('.buy-btn');
+
+  // Loop through each button and attach a click event listener
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+      
+      // Scroll to the top of the form with a slight offset
+      var form = document.querySelector('.php-email-form');
+      var formPosition = form.getBoundingClientRect().top + window.scrollY;
+      var offset = 80; // Adjust this value to your preference
+      window.scrollTo({ top: formPosition - offset, behavior: 'smooth' });
+      
+      // Fill in the subject field based on the button's data-subject attribute
+      var subject = this.getAttribute('data-subject');
+      document.getElementById('subject').value = subject;
+    });
+  });
+});
+
 })()
