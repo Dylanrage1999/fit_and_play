@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // prevent the form submit from refreshing the page
     event.preventDefault();
 
-    const { name, email, phone, message } = event.target;
+    const { name, email, subject, message } = event.target;
 
     // Use your API endpoint URL you copied from the previous step
-    //const endpoint = "https://eznzqs6h18.execute-api.eu-north-1.amazonaws.com/default/sendOfferte";
+    const endpoint = "https://2ftqy0fc79.execute-api.eu-north-1.amazonaws.com/default/sendEmailForm";
     
     // We use JSON.stringify here so the data can be sent as a string via HTTP
     const body = JSON.stringify({
       senderName: name.value,
       senderEmail: email.value,
-      phone: phone.value,
+      subject: subject.value,
       message: message.value
     });
 
