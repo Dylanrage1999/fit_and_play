@@ -768,24 +768,24 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form class="php-email-form">
+            <form id="myForm" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Jouw Naam</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Jouw Naam" value="" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Jouw Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Jouw E-mail" value="" required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Onderwerp</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Onderwerp" value="" required>
               </div>
               <div class="form-group">
                 <label for="name">Bericht</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" placeholder="Bericht" required></textarea>
               </div>
               <div class="text-center"><button type="submit">Verzend Bericht</button></div>
             </form>
@@ -867,6 +867,7 @@
         &copy; Copyright <strong><span>Fit & Play</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
+        <p style="color: lightgray;">Created by Dylan Ragé-Van Den Eynde</p>
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
@@ -880,17 +881,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/js/form_mail.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <script src="./assets/js/form_mail.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 
 </body>
 
